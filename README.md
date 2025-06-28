@@ -1,62 +1,60 @@
 # Simple Portfolio
 
-A clean, modern portfolio website built with React and Vite. This portfolio showcases my skills, projects, and professional information in a beautiful, responsive design.
+A modern, responsive portfolio website built with React and Vite.
 
 ## Features
 
-- **Modern Design**: Clean and professional layout with smooth animations
-- **Responsive**: Fully responsive design that works on all devices
-- **Smooth Navigation**: Fixed navigation with smooth scrolling between sections
-- **Interactive Elements**: Hover effects and animations for better user experience
-- **Fast Performance**: Built with Vite for optimal performance
-
-## Sections
-
-- **Hero**: Introduction and call-to-action
-- **About**: Personal information and background
-- **Skills**: Technical skills organized by category
-- **Projects**: Showcase of featured projects
-- **Contact**: Contact information and social links
-
-## Technologies Used
-
-- React 19
-- Vite
-- CSS3 with modern features
-- Responsive design principles
+- Responsive design
+- Smooth scrolling navigation
+- Project showcase with images
+- Skills section
+- Contact information
+- Modern UI with animations
 
 ## Getting Started
 
 1. Clone the repository
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Start the development server:
-   ```bash
-   npm run dev
-   ```
-4. Open [http://localhost:5173](http://localhost:5173) to view it in the browser
+2. Install dependencies: `npm install`
+3. Start the development server: `npm run dev`
+4. Open [http://localhost:5173](http://localhost:5173) in your browser
+
+## Adding Project Images
+
+To add images for your projects:
+
+1. **Place images in the `public/images/` folder**
+   - Recommended format: PNG or JPG
+   - Recommended size: 400x300px or similar aspect ratio
+   - File names should match the `src` attributes in `App.jsx`
+
+2. **Current image references in the code:**
+   - `/images/stylecuts-project.png` - for StyleCuts project
+   - `/images/task-app.png` - for Task Management App
+   - `/images/weather-app.png` - for Weather Dashboard
+
+3. **Fallback behavior:**
+   - If an image fails to load, it will automatically show a placeholder
+   - The placeholder displays the project name with a gradient background
+
+4. **Image optimization tips:**
+   - Use compressed images (under 200KB each)
+   - Maintain consistent aspect ratios
+   - Use descriptive file names
 
 ## Customization
 
-You can easily customize this portfolio by:
+- Update project details in `src/App.jsx`
+- Modify styles in `src/App.css`
+- Replace placeholder content with your information
+- Add your own projects and skills
 
-- Updating personal information in the `App.jsx` file
-- Modifying colors and styles in `App.css`
-- Adding your own projects and skills
-- Updating contact information and social links
+## Technologies Used
 
-## Deployment
-
-Build the project for production:
-
-```bash
-npm run build
-```
-
-The built files will be in the `dist` folder, ready for deployment to any static hosting service.
+- React
+- Vite
+- CSS3
+- HTML5
 
 ## License
 
-This project is open source and available under the [MIT License](LICENSE).
+MIT

@@ -145,26 +145,42 @@ function App() {
           <div className="projects-grid">
             <div className="project-card">
               <div className="project-image">
-                <div className="project-placeholder">Project 1</div>
+                <img 
+                  src="/images/stylecuts-project.png" 
+                  alt="StyleCuts Project" 
+                  onError={(e) => {
+                    e.target.style.display = 'none';
+                    e.target.nextSibling.style.display = 'flex';
+                  }}
+                />
+                <div className="project-placeholder" style={{display: 'none'}}>StyleCuts</div>
               </div>
               <div className="project-content">
-                <h3>E-Commerce Platform</h3>
-                <p>A full-stack e-commerce application built with React, Node.js, and MongoDB.</p>
+                <h3>StyleCuts</h3>
+                <p>A barber booking application built with HTML, CSS, and JavaScript.</p>
                 <div className="project-tech">
-                  <span>React</span>
-                  <span>Node.js</span>
-                  <span>MongoDB</span>
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
                 </div>
                 <div className="project-links">
-                  <a href="#" className="project-link">Live Demo</a>
-                  <a href="#" className="project-link">GitHub</a>
+                  <a href="https://style-cuts.vercel.app" className="project-link">Live Demo</a>
+                  <a href="https://github.com/prakashwale/StyleCuts" className="project-link">GitHub</a>
                 </div>
               </div>
             </div>
 
             <div className="project-card">
               <div className="project-image">
-                <div className="project-placeholder">Project 2</div>
+                <img 
+                  src="/images/task-app.png" 
+                  alt="Task Management App" 
+                  onError={(e) => {
+                    e.target.style.display = 'none';
+                    e.target.nextSibling.style.display = 'flex';
+                  }}
+                />
+                <div className="project-placeholder" style={{display: 'none'}}>Task App</div>
               </div>
               <div className="project-content">
                 <h3>Task Management App</h3>
@@ -183,7 +199,15 @@ function App() {
 
             <div className="project-card">
               <div className="project-image">
-                <div className="project-placeholder">Project 3</div>
+                <img 
+                  src="/images/weather-app.png" 
+                  alt="Weather Dashboard" 
+                  onError={(e) => {
+                    e.target.style.display = 'none';
+                    e.target.nextSibling.style.display = 'flex';
+                  }}
+                />
+                <div className="project-placeholder" style={{display: 'none'}}>Weather App</div>
               </div>
               <div className="project-content">
                 <h3>Weather Dashboard</h3>
