@@ -29,8 +29,8 @@ To add images for your projects:
 
 2. **Current image references in the code:**
    - `/images/stylecuts-project.png` - for StyleCuts project
-   - `/images/task-app.png` - for Task Management App
-   - `/images/weather-app.png` - for Weather Dashboard
+   - `/images/ecommerce-api.png` - for E-Commerce Microservices API
+   - `/images/user-management.png` - for User Management System
 
 3. **Fallback behavior:**
    - If an image fails to load, it will automatically show a placeholder

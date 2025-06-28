@@ -69,8 +69,8 @@ function App() {
       <section id="home" className="hero">
         <div className="hero-content">
           <h1>Hi, I'm Prakash</h1>
-          <h2>Full Stack Developer</h2>
-          <p>I create beautiful and functional web applications</p>
+          <h2>Backend Developer</h2>
+          <p>I build robust, scalable backend systems and microservices</p>
           <button 
             className="cta-button"
             onClick={() => scrollToSection('projects')}
@@ -87,12 +87,12 @@ function App() {
           <div className="about-content">
             <div className="about-text">
               <p>
-                I'm a passionate full-stack developer with experience in building modern web applications. 
-                I love creating user-friendly interfaces and solving complex problems through code.
+                I'm a passionate backend engineer with expertise in Java, Spring Boot, and microservices architecture. 
+                I specialize in building scalable, high-performance backend systems that power modern applications.
               </p>
               <p>
-                When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, 
-                or sharing knowledge with the developer community.
+                With experience in cloud platforms like AWS and a deep understanding of distributed systems, 
+                I design and implement robust APIs, database solutions, and microservices that handle millions of requests.
               </p>
             </div>
           </div>
@@ -105,33 +105,33 @@ function App() {
           <h2>Skills</h2>
           <div className="skills-grid">
             <div className="skill-category">
-              <h3>Frontend</h3>
+              <h3>Backend Technologies</h3>
               <div className="skill-items">
-                <span className="skill-item">React</span>
-                <span className="skill-item">JavaScript</span>
-                <span className="skill-item">TypeScript</span>
-                <span className="skill-item">HTML/CSS</span>
-                <span className="skill-item">Tailwind CSS</span>
+                <span className="skill-item">Java</span>
+                <span className="skill-item">Spring Boot</span>
+                <span className="skill-item">Spring Security</span>
+                <span className="skill-item">Spring Data JPA</span>
+                <span className="skill-item">Microservices</span>
               </div>
             </div>
             <div className="skill-category">
-              <h3>Backend</h3>
+              <h3>Databases & Cloud</h3>
               <div className="skill-items">
-                <span className="skill-item">Node.js</span>
-                <span className="skill-item">Express</span>
-                <span className="skill-item">Python</span>
-                <span className="skill-item">MongoDB</span>
+                <span className="skill-item">MySQL</span>
                 <span className="skill-item">PostgreSQL</span>
+                <span className="skill-item">MongoDB</span>
+                <span className="skill-item">Redis</span>
+                <span className="skill-item">AWS</span>
               </div>
             </div>
             <div className="skill-category">
-              <h3>Tools</h3>
+              <h3>Tools & DevOps</h3>
               <div className="skill-items">
-                <span className="skill-item">Git</span>
                 <span className="skill-item">Docker</span>
-                <span className="skill-item">AWS</span>
-                <span className="skill-item">Figma</span>
-                <span className="skill-item">VS Code</span>
+                <span className="skill-item">Kubernetes</span>
+                <span className="skill-item">Jenkins</span>
+                <span className="skill-item">Git</span>
+                <span className="skill-item">Maven</span>
               </div>
             </div>
           </div>
@@ -157,11 +157,11 @@ function App() {
               </div>
               <div className="project-content">
                 <h3>StyleCuts</h3>
-                <p>A barber booking application built with HTML, CSS, and JavaScript.</p>
+                <p>A barber booking application with RESTful APIs and real-time booking management.</p>
                 <div className="project-tech">
-                  <span>HTML</span>
-                  <span>CSS</span>
-                  <span>JavaScript</span>
+                  <span>Java</span>
+                  <span>Spring Boot</span>
+                  <span>MySQL</span>
                 </div>
                 <div className="project-links">
                   <a href="https://style-cuts.vercel.app" className="project-link">Live Demo</a>
@@ -173,25 +173,26 @@ function App() {
             <div className="project-card">
               <div className="project-image">
                 <img 
-                  src="/images/task-app.png" 
-                  alt="Task Management App" 
+                  src="/images/ecommerce-api.png" 
+                  alt="E-Commerce API" 
                   onError={(e) => {
                     e.target.style.display = 'none';
                     e.target.nextSibling.style.display = 'flex';
                   }}
                 />
-                <div className="project-placeholder" style={{display: 'none'}}>Task App</div>
+                <div className="project-placeholder" style={{display: 'none'}}>E-Commerce API</div>
               </div>
               <div className="project-content">
-                <h3>Task Management App</h3>
-                <p>A collaborative task management application with real-time updates.</p>
+                <h3>E-Commerce Microservices API</h3>
+                <p>A scalable microservices architecture with product catalog, order management, and payment processing.</p>
                 <div className="project-tech">
-                  <span>React</span>
-                  <span>Socket.io</span>
-                  <span>Express</span>
+                  <span>Spring Boot</span>
+                  <span>Microservices</span>
+                  <span>PostgreSQL</span>
+                  <span>Redis</span>
                 </div>
                 <div className="project-links">
-                  <a href="#" className="project-link">Live Demo</a>
+                  <a href="#" className="project-link">API Docs</a>
                   <a href="#" className="project-link">GitHub</a>
                 </div>
               </div>
@@ -200,25 +201,26 @@ function App() {
             <div className="project-card">
               <div className="project-image">
                 <img 
-                  src="/images/weather-app.png" 
-                  alt="Weather Dashboard" 
+                  src="/images/user-management.png" 
+                  alt="User Management System" 
                   onError={(e) => {
                     e.target.style.display = 'none';
                     e.target.nextSibling.style.display = 'flex';
                   }}
                 />
-                <div className="project-placeholder" style={{display: 'none'}}>Weather App</div>
+                <div className="project-placeholder" style={{display: 'none'}}>User Management</div>
               </div>
               <div className="project-content">
-                <h3>Weather Dashboard</h3>
-                <p>A weather application that displays current and forecast weather data.</p>
+                <h3>User Management & Authentication System</h3>
+                <p>A secure user management system with JWT authentication, role-based access control, and audit logging.</p>
                 <div className="project-tech">
-                  <span>React</span>
-                  <span>Weather API</span>
-                  <span>CSS3</span>
+                  <span>Spring Security</span>
+                  <span>JWT</span>
+                  <span>MongoDB</span>
+                  <span>AWS</span>
                 </div>
                 <div className="project-links">
-                  <a href="#" className="project-link">Live Demo</a>
+                  <a href="#" className="project-link">API Demo</a>
                   <a href="#" className="project-link">GitHub</a>
                 </div>
               </div>
